@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 
 header {
     position: fixed;
@@ -15,15 +18,26 @@ header {
     display: flex;
     justify-content: space-around;
     transition: 0.7s;
-    padding: 30px 20px;
+    padding: 20px 20px;
     z-index: 100;
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 2px;
+  }
+
+  .navLogos{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0px;
+  }
+
+  .navLogos p {
+    font-size: 40px;
+    font-family: 'Macondo', cursive;
   }
   
   header.abajo {
     background-color: #f5f5f5;
-    padding: 15px 20px;
+    padding: 0px 20px;
   }
   
   nav{
@@ -45,6 +59,7 @@ header {
     height: 100%;
     list-style: none;
     display:flex;
+    font-size: 1.1rem;
     align-items: center;
   }
   
@@ -69,32 +84,6 @@ header {
     text-decoration: none;
   }
   
-  nav > ul > li > ul {
-    position: absolute;
-    list-style: none;
-    top: 90px;
-    width: 200px;
-    background-color: var(--bg-color);
-    padding: 20px;
-    visibility: hidden;
-    transition: all 0.3s;
-  }
-  
-  nav > ul > li > ul > li {
-    margin-bottom: 20px;
-    color: #000;
-    cursor: pointer;
-  }
-  
-  nav > ul > li > ul > li > a {
-    color: #000;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  nav > ul > li > ul > li > a:hover {
-    color: var(--primary-color);
-  }
   
   #check{
     display: none;
@@ -198,4 +187,55 @@ header {
     rgba(0, 0, 0, 0) 100%,
     rgba(2, 0, 36, 0) 255%
   );
+}
+
+
+/* -------- services ------*/
+
+#services {
+  width: 100%;
+  margin: 50px 0;
+  text-align: center;
+}
+
+#services h2{
+  font-size: 2rem;
+  margin: 40px;
+}
+
+.servicesContainer{
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display:  flex;
+  justify-content: space-around;
+}
+
+.serviceCard{
+  max-width: 250px;
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 20px;
+}
+
+.cardTittle i{
+  font-size: 70px;
+  padding-bottom: 20px;
+}
+
+.cardContent {
+  margin-top: 15px;
+}
+
+.cardContent p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.cardContent button{
+  width: 80%;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px;
+  font-weight: 600;
 }
